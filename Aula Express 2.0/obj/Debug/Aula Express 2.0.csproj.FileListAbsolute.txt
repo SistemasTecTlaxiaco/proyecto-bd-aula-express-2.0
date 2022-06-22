@@ -1,0 +1,16 @@
+C:\Users\Greg\source\repos\Aula Express 2.0\Aula Express 2.0\bin\Debug\Aula Express 2.0.exe.config
+C:\Users\Greg\source\repos\Aula Express 2.0\Aula Express 2.0\bin\Debug\Aula Express 2.0.exe
+C:\Users\Greg\source\repos\Aula Express 2.0\Aula Express 2.0\bin\Debug\Aula Express 2.0.pdb
+C:\Users\Greg\source\repos\Aula Express 2.0\Aula Express 2.0\obj\Debug\Aula Express 2.0.csproj.AssemblyReference.cache
+C:\Users\Greg\source\repos\Aula Express 2.0\Aula Express 2.0\obj\Debug\Aula Express 2.0.csproj.SuggestedBindingRedirects.cache
+C:\Users\Greg\source\repos\Aula Express 2.0\Aula Express 2.0\obj\Debug\Aula_Express_2._0.Form1.resources
+C:\Users\Greg\source\repos\Aula Express 2.0\Aula Express 2.0\obj\Debug\Aula_Express_2._0.Form2.resources
+C:\Users\Greg\source\repos\Aula Express 2.0\Aula Express 2.0\obj\Debug\Aula_Express_2._0.Form3.resources
+C:\Users\Greg\source\repos\Aula Express 2.0\Aula Express 2.0\obj\Debug\Aula_Express_2._0.Form4.resources
+C:\Users\Greg\source\repos\Aula Express 2.0\Aula Express 2.0\obj\Debug\Aula_Express_2._0.Form5.resources
+C:\Users\Greg\source\repos\Aula Express 2.0\Aula Express 2.0\obj\Debug\Aula_Express_2._0.Form6.resources
+C:\Users\Greg\source\repos\Aula Express 2.0\Aula Express 2.0\obj\Debug\Aula_Express_2._0.Properties.Resources.resources
+C:\Users\Greg\source\repos\Aula Express 2.0\Aula Express 2.0\obj\Debug\Aula Express 2.0.csproj.GenerateResource.cache
+C:\Users\Greg\source\repos\Aula Express 2.0\Aula Express 2.0\obj\Debug\Aula Express 2.0.csproj.CoreCompileInputs.cache
+C:\Users\Greg\source\repos\Aula Express 2.0\Aula Express 2.0\obj\Debug\Aula Express 2.0.exe
+C:\Users\Greg\source\repos\Aula Express 2.0\Aula Express 2.0\obj\Debug\Aula Express 2.0.pdb
