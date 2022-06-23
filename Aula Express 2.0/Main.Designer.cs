@@ -34,6 +34,7 @@
             this.btnRegIntru = new System.Windows.Forms.Button();
             this.btnRegEst = new System.Windows.Forms.Button();
             this.btnAcceder = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -41,11 +42,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(146, 313);
+            this.label1.Location = new System.Drawing.Point(80, 348);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(251, 42);
+            this.label1.Size = new System.Drawing.Size(342, 47);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Aula Express";
+            this.label1.Text = "AULA EXPRESS";
             // 
             // pictureBox1
             // 
@@ -60,36 +61,49 @@
             // 
             // btnRegIntru
             // 
-            this.btnRegIntru.Location = new System.Drawing.Point(514, 92);
+            this.btnRegIntru.Location = new System.Drawing.Point(569, 101);
             this.btnRegIntru.Name = "btnRegIntru";
             this.btnRegIntru.Size = new System.Drawing.Size(201, 37);
             this.btnRegIntru.TabIndex = 2;
-            this.btnRegIntru.Text = "REGISTRAR \r\nINSTRUCTOR";
+            this.btnRegIntru.Text = "INSTRUCTOR";
             this.btnRegIntru.UseVisualStyleBackColor = true;
+            this.btnRegIntru.Click += new System.EventHandler(this.btnRegIntru_Click);
             // 
             // btnRegEst
             // 
-            this.btnRegEst.Location = new System.Drawing.Point(514, 200);
+            this.btnRegEst.Location = new System.Drawing.Point(569, 162);
             this.btnRegEst.Name = "btnRegEst";
             this.btnRegEst.Size = new System.Drawing.Size(201, 37);
             this.btnRegEst.TabIndex = 3;
-            this.btnRegEst.Text = "REGISTRAR \r\nESTUDIANTE\r\n";
+            this.btnRegEst.Text = "ESTUDIANTE\r\n";
             this.btnRegEst.UseVisualStyleBackColor = true;
+            this.btnRegEst.Click += new System.EventHandler(this.btnRegEst_Click);
             // 
             // btnAcceder
             // 
-            this.btnAcceder.Location = new System.Drawing.Point(514, 309);
+            this.btnAcceder.Location = new System.Drawing.Point(502, 290);
             this.btnAcceder.Name = "btnAcceder";
-            this.btnAcceder.Size = new System.Drawing.Size(201, 37);
+            this.btnAcceder.Size = new System.Drawing.Size(201, 76);
             this.btnAcceder.TabIndex = 4;
             this.btnAcceder.Text = "ACCEDER";
             this.btnAcceder.UseVisualStyleBackColor = true;
+            this.btnAcceder.Click += new System.EventHandler(this.btnAcceder_Click);
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.9434F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(471, 41);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(153, 37);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Registrarse:";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.btnAcceder);
             this.Controls.Add(this.btnRegEst);
             this.Controls.Add(this.btnRegIntru);
@@ -110,6 +124,7 @@
         private System.Windows.Forms.Button btnRegIntru;
         private System.Windows.Forms.Button btnRegEst;
         private System.Windows.Forms.Button btnAcceder;
+        private System.Windows.Forms.Label label2;
     }
 }
 

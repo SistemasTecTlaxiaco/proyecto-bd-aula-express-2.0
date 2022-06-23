@@ -14,3 +14,32 @@ C:\Users\Greg\source\repos\Aula Express 2.0\Aula Express 2.0\obj\Debug\Aula Expr
 C:\Users\Greg\source\repos\Aula Express 2.0\Aula Express 2.0\obj\Debug\Aula Express 2.0.csproj.CoreCompileInputs.cache
 C:\Users\Greg\source\repos\Aula Express 2.0\Aula Express 2.0\obj\Debug\Aula Express 2.0.exe
 C:\Users\Greg\source\repos\Aula Express 2.0\Aula Express 2.0\obj\Debug\Aula Express 2.0.pdb
+C:\Users\52953\Desktop\proyecto-bd-aula-express-2.0\Aula Express 2.0\bin\Debug\Aula Express 2.0.exe.config
+C:\Users\52953\Desktop\proyecto-bd-aula-express-2.0\Aula Express 2.0\bin\Debug\Aula Express 2.0.exe
+C:\Users\52953\Desktop\proyecto-bd-aula-express-2.0\Aula Express 2.0\bin\Debug\Aula Express 2.0.pdb
+C:\Users\52953\Desktop\proyecto-bd-aula-express-2.0\Aula Express 2.0\bin\Debug\MySql.Data.dll
+C:\Users\52953\Desktop\proyecto-bd-aula-express-2.0\Aula Express 2.0\bin\Debug\Google.Protobuf.dll
+C:\Users\52953\Desktop\proyecto-bd-aula-express-2.0\Aula Express 2.0\bin\Debug\ZstdNet.dll
+C:\Users\52953\Desktop\proyecto-bd-aula-express-2.0\Aula Express 2.0\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\52953\Desktop\proyecto-bd-aula-express-2.0\Aula Express 2.0\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\52953\Desktop\proyecto-bd-aula-express-2.0\Aula Express 2.0\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\52953\Desktop\proyecto-bd-aula-express-2.0\Aula Express 2.0\bin\Debug\System.Memory.dll
+C:\Users\52953\Desktop\proyecto-bd-aula-express-2.0\Aula Express 2.0\bin\Debug\System.Buffers.dll
+C:\Users\52953\Desktop\proyecto-bd-aula-express-2.0\Aula Express 2.0\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\52953\Desktop\proyecto-bd-aula-express-2.0\Aula Express 2.0\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\52953\Desktop\proyecto-bd-aula-express-2.0\Aula Express 2.0\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\52953\Desktop\proyecto-bd-aula-express-2.0\Aula Express 2.0\bin\Debug\MySql.Data.xml
+C:\Users\52953\Desktop\proyecto-bd-aula-express-2.0\Aula Express 2.0\obj\Debug\Aula Express 2.0.csproj.AssemblyReference.cache
+C:\Users\52953\Desktop\proyecto-bd-aula-express-2.0\Aula Express 2.0\obj\Debug\Aula Express 2.0.exe.config
+C:\Users\52953\Desktop\proyecto-bd-aula-express-2.0\Aula Express 2.0\obj\Debug\Aula_Express_2._0.Form1.resources
+C:\Users\52953\Desktop\proyecto-bd-aula-express-2.0\Aula Express 2.0\obj\Debug\Aula_Express_2._0.NewUserInstructor.resources
+C:\Users\52953\Desktop\proyecto-bd-aula-express-2.0\Aula Express 2.0\obj\Debug\Aula_Express_2._0.NewUserStudent.resources
+C:\Users\52953\Desktop\proyecto-bd-aula-express-2.0\Aula Express 2.0\obj\Debug\Aula_Express_2._0.Form5.resources
+C:\Users\52953\Desktop\proyecto-bd-aula-express-2.0\Aula Express 2.0\obj\Debug\Aula_Express_2._0.Form6.resources
+C:\Users\52953\Desktop\proyecto-bd-aula-express-2.0\Aula Express 2.0\obj\Debug\Aula_Express_2._0.Properties.Resources.resources
+C:\Users\52953\Desktop\proyecto-bd-aula-express-2.0\Aula Express 2.0\obj\Debug\Aula Express 2.0.csproj.GenerateResource.cache
+C:\Users\52953\Desktop\proyecto-bd-aula-express-2.0\Aula Express 2.0\obj\Debug\Aula Express 2.0.csproj.CoreCompileInputs.cache
+C:\Users\52953\Desktop\proyecto-bd-aula-express-2.0\Aula Express 2.0\obj\Debug\Aula Express 2.0.csproj.CopyComplete
+C:\Users\52953\Desktop\proyecto-bd-aula-express-2.0\Aula Express 2.0\obj\Debug\Aula Express 2.0.exe
+C:\Users\52953\Desktop\proyecto-bd-aula-express-2.0\Aula Express 2.0\obj\Debug\Aula Express 2.0.pdb
+C:\Users\52953\Desktop\proyecto-bd-aula-express-2.0\Aula Express 2.0\obj\Debug\Aula_Express_2._0.Login.resources
