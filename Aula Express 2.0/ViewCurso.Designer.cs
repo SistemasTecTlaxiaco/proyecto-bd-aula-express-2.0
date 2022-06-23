@@ -49,9 +49,11 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(503, 195);
+            this.dataGridView1.Location = new System.Drawing.Point(486, 195);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(285, 150);
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView1.Size = new System.Drawing.Size(302, 150);
             this.dataGridView1.TabIndex = 25;
             // 
             // Btnmostrar
@@ -64,6 +66,7 @@
             this.Btnmostrar.TabIndex = 24;
             this.Btnmostrar.Text = "Mostrar";
             this.Btnmostrar.UseVisualStyleBackColor = true;
+            this.Btnmostrar.Click += new System.EventHandler(this.Btnmostrar_Click);
             // 
             // Btnsalir
             // 
@@ -74,6 +77,7 @@
             this.Btnsalir.TabIndex = 23;
             this.Btnsalir.Text = "Salir";
             this.Btnsalir.UseVisualStyleBackColor = true;
+            this.Btnsalir.Click += new System.EventHandler(this.Btnsalir_Click);
             // 
             // Btnborrar
             // 
@@ -84,6 +88,7 @@
             this.Btnborrar.TabIndex = 22;
             this.Btnborrar.Text = "Borrar";
             this.Btnborrar.UseVisualStyleBackColor = true;
+            this.Btnborrar.Click += new System.EventHandler(this.Btnborrar_Click);
             // 
             // Btnguardar
             // 
@@ -94,6 +99,7 @@
             this.Btnguardar.TabIndex = 21;
             this.Btnguardar.Text = "Guardar";
             this.Btnguardar.UseVisualStyleBackColor = true;
+            this.Btnguardar.Click += new System.EventHandler(this.Btnguardar_Click);
             // 
             // groupBoxDatCurs
             // 
@@ -106,7 +112,7 @@
             this.groupBoxDatCurs.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxDatCurs.Location = new System.Drawing.Point(12, 109);
             this.groupBoxDatCurs.Name = "groupBoxDatCurs";
-            this.groupBoxDatCurs.Size = new System.Drawing.Size(485, 262);
+            this.groupBoxDatCurs.Size = new System.Drawing.Size(468, 262);
             this.groupBoxDatCurs.TabIndex = 20;
             this.groupBoxDatCurs.TabStop = false;
             this.groupBoxDatCurs.Text = "Datos Del Curso";
@@ -116,7 +122,7 @@
             this.textDescricion.Location = new System.Drawing.Point(212, 84);
             this.textDescricion.Multiline = true;
             this.textDescricion.Name = "textDescricion";
-            this.textDescricion.Size = new System.Drawing.Size(266, 152);
+            this.textDescricion.Size = new System.Drawing.Size(247, 152);
             this.textDescricion.TabIndex = 8;
             // 
             // textNombre
@@ -138,7 +144,7 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(206, 38);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(172, 32);
+            this.label5.Size = new System.Drawing.Size(173, 32);
             this.label5.TabIndex = 5;
             this.label5.Text = "Descripcion";
             // 
@@ -147,7 +153,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(6, 151);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(120, 32);
+            this.label4.Size = new System.Drawing.Size(121, 32);
             this.label4.TabIndex = 4;
             this.label4.Text = "Nombre";
             // 
@@ -156,7 +162,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(6, 38);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(107, 32);
+            this.label3.Size = new System.Drawing.Size(108, 32);
             this.label3.TabIndex = 3;
             this.label3.Text = "Codigo";
             // 
@@ -164,9 +170,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(313, 63);
+            this.label2.Location = new System.Drawing.Point(300, 74);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(195, 32);
+            this.label2.Size = new System.Drawing.Size(196, 32);
             this.label2.TabIndex = 19;
             this.label2.Text = "INSTRUCTOR";
             // 
@@ -174,9 +180,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(289, 18);
+            this.label1.Location = new System.Drawing.Point(287, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(221, 32);
+            this.label1.Size = new System.Drawing.Size(222, 32);
             this.label1.TabIndex = 18;
             this.label1.Text = "AULA EXPRESS";
             // 
@@ -195,6 +201,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Form6";
             this.Text = "ViewCurso";
+            this.Load += new System.EventHandler(this.Form6_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBoxDatCurs.ResumeLayout(false);
             this.groupBoxDatCurs.PerformLayout();
