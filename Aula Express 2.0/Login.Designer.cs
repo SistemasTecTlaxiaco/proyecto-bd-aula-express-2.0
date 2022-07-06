@@ -46,7 +46,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(198, 30);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(303, 40);
+            this.label1.Size = new System.Drawing.Size(271, 37);
             this.label1.TabIndex = 1;
             this.label1.Text = "AULA EXPRESS";
             // 
@@ -56,7 +56,7 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.9434F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(343, 178);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(127, 29);
+            this.label3.Size = new System.Drawing.Size(109, 25);
             this.label3.TabIndex = 14;
             this.label3.Text = "USUARIO\r\n";
             // 
@@ -76,6 +76,7 @@
             this.btnAcceder.TabIndex = 20;
             this.btnAcceder.Text = "ACCEDER";
             this.btnAcceder.UseVisualStyleBackColor = true;
+            this.btnAcceder.Click += new System.EventHandler(this.btnAcceder_Click);
             // 
             // textBox2
             // 
@@ -91,7 +92,7 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.9434F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(311, 280);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(190, 29);
+            this.label2.Size = new System.Drawing.Size(162, 25);
             this.label2.TabIndex = 22;
             this.label2.Text = "CONTRASEÑA";
             // 
@@ -101,7 +102,7 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.69811F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(54, 117);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(252, 33);
+            this.label4.Size = new System.Drawing.Size(240, 31);
             this.label4.TabIndex = 23;
             this.label4.Text = "INICIAR SESION";
             // 

@@ -48,5 +48,10 @@ namespace Aula_Express_2._0
             frmIniSesion.Show();
             this.Hide();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

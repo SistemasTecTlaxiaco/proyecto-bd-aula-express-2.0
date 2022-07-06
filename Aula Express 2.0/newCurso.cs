@@ -16,5 +16,10 @@ namespace Aula_Express_2._0
         {
             InitializeComponent();
         }
+
+        private void Form5_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

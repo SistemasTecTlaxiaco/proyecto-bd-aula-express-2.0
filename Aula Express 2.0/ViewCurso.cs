@@ -80,7 +80,7 @@ namespace Aula_Express_2._0
 
         private void Btnborrar_Click(object sender, EventArgs e)
         {
-            string sql = String.Format("DELETE FROM `cursos` WHERE `cursos`.`cod_Curso` = '"+ textCodigo.Text +"'", dataGridView1.SelectedRows);
+            string sql = String.Format("DELETE FROM cursos WHERE `cursos`.`cod_Curso` = '"+ textCodigo.Text +"'", dataGridView1.SelectedRows);
             if (MessageBox.Show("¿Deseas Eliminar El Curso?", "Eliminar",
                 MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
@@ -131,6 +131,12 @@ namespace Aula_Express_2._0
             string sql = "SELECT * FROM `cursos`";
             dataGridView1.Select();
             dataGridView1.DataSource = ListCursos(sql);
+        }
+
+        private void BtnCerrarsecion_Click(object sender, EventArgs e)
+        {
+            Form form = new Form1();
+            form.Show();
         }
     }
 }

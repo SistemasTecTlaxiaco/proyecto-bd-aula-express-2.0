@@ -44,7 +44,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(80, 348);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(342, 47);
+            this.label1.Size = new System.Drawing.Size(315, 42);
             this.label1.TabIndex = 0;
             this.label1.Text = "AULA EXPRESS";
             // 
@@ -110,7 +110,8 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
-            this.Text = "Main";
+            this.Text = "Registro";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

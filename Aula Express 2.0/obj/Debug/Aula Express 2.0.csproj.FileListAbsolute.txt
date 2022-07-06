@@ -84,3 +84,4 @@ C:\Users\Acer\Desktop\proyecto-bd-aula-express-2.0\Aula Express 2.0\obj\Debug\Au
 C:\Users\Acer\Desktop\proyecto-bd-aula-express-2.0\Aula Express 2.0\obj\Debug\Aula Express 2.0.exe
 C:\Users\Acer\Desktop\proyecto-bd-aula-express-2.0\Aula Express 2.0\obj\Debug\Aula Express 2.0.pdb
 >>>>>>> bc08acda8ff71a06cdbd2a90e086014658ed2a9d
+C:\Users\Acer\Desktop\proyecto-bd-aula-express-2.0\Aula Express 2.0\obj\Debug\Aula_Express_2._0.Login.resources

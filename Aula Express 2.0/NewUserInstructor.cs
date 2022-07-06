@@ -21,8 +21,8 @@ namespace Aula_Express_2._0
         }
         public void guardarUser()
         {
-            
-            string sql = string.Format("INSERT INTO `instructores`(`nombreInstructor`, `correo`, `contraseña`)" +
+            //Correccion de sitaxis, nombre_apellidos
+            string sql = string.Format("INSERT INTO `instructores`(`nombre_apellidos`, `correo`, `contraseña`)" +
                                         "VALUES('" + textBox1.Text + "', '" + textBox2.Text + "', '" + textBox3.Text + "')",
                                           textBox1.Text, textBox2.Text, textBox3.Text);
             
@@ -56,7 +56,7 @@ namespace Aula_Express_2._0
 
         }
 
-
+        //Acceder
         private void btnAcceder_Click(object sender, EventArgs e)
         {
 
@@ -68,10 +68,18 @@ namespace Aula_Express_2._0
             guardarUser();
         }
 
+        //Boton atras
         private void button1_Click(object sender, EventArgs e)
         {
             frmMain.Show();
             this.Hide();
+        }
+
+        private void NewUserInstructor_Load(object sender, EventArgs e)
+        {
+
+
+
         }
     }
 }

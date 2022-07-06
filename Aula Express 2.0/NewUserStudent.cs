@@ -58,6 +58,7 @@ namespace Aula_Express_2._0
 
         private void button1_Click(object sender, EventArgs e)
         {
+           
             Form1 frmMain = new Form1();
             frmMain.Show();
             this.Hide();
@@ -71,6 +72,11 @@ namespace Aula_Express_2._0
                 return;
             }
             guardarUser();
+        }
+
+        private void NewUserStudent_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

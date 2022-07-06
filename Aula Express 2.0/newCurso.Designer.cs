@@ -97,7 +97,7 @@
             this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(287, 56);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(191, 32);
+            this.label2.Size = new System.Drawing.Size(192, 32);
             this.label2.TabIndex = 6;
             this.label2.Text = "ESTUDIANTE";
             // 
@@ -107,7 +107,7 @@
             this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(263, 11);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(221, 32);
+            this.label1.Size = new System.Drawing.Size(222, 32);
             this.label1.TabIndex = 5;
             this.label1.Text = "AULA EXPRESS";
             // 
@@ -121,6 +121,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Form5";
             this.Text = "newCurso";
+            this.Load += new System.EventHandler(this.Form5_Load);
             this.groupBox1.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.ResumeLayout(false);

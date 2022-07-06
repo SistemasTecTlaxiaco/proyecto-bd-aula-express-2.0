@@ -42,6 +42,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.BtnCerrarsecion = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBoxDatCurs.SuspendLayout();
             this.SuspendLayout();
@@ -186,11 +187,24 @@
             this.label1.TabIndex = 18;
             this.label1.Text = "AULA EXPRESS";
             // 
+            // BtnCerrarsecion
+            // 
+            this.BtnCerrarsecion.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCerrarsecion.Location = new System.Drawing.Point(655, 9);
+            this.BtnCerrarsecion.Name = "BtnCerrarsecion";
+            this.BtnCerrarsecion.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.BtnCerrarsecion.Size = new System.Drawing.Size(133, 23);
+            this.BtnCerrarsecion.TabIndex = 26;
+            this.BtnCerrarsecion.Text = "Cerrar Sesion";
+            this.BtnCerrarsecion.UseVisualStyleBackColor = true;
+            this.BtnCerrarsecion.Click += new System.EventHandler(this.BtnCerrarsecion_Click);
+            // 
             // Form6
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.BtnCerrarsecion);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.Btnmostrar);
             this.Controls.Add(this.Btnsalir);
@@ -226,5 +240,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button BtnCerrarsecion;
     }
 }
