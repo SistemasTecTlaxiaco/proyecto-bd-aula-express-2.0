@@ -19,6 +19,8 @@ namespace Aula_Express_2._0
             textCodigo.Text = " ";
             textNombre.Text = " ";
             textDescricion.Text = " ";
+            textObjetivo.Text = " ";
+            textImparte.Text = " ";
             dataGridView1.ClearSelection();
         }
 
@@ -31,7 +33,9 @@ namespace Aula_Express_2._0
         {
             if (textCodigo.Text.Trim() == String.Empty &&
                textNombre.Text.Trim() == String.Empty &&
-               textDescricion.Text.Trim() == String.Empty)
+               textDescricion.Text.Trim() == String.Empty &&
+               textObjetivo.Text.Trim()== String.Empty &&
+               textImparte.Text.Trim() == String.Empty)
             {
                 MessageBox.Show("!!!... Error, los campos no pueden estar vacios ...!!!");
                 return;
@@ -54,10 +58,20 @@ namespace Aula_Express_2._0
                 MessageBox.Show("Debes ingresar una Descripcion");
                 return;
             }
+            if (textObjetivo.Text.Trim() == String.Empty)
+            {
+                MessageBox.Show("Debes ingresar el objetivo");
+                return;
+            }
+            if (textImparte.Text.Trim() == String.Empty)
+            {
+                MessageBox.Show("Debes ingresar quien imparte el curso");
+                return;
+            }
 
-            String sql = String.Format("INSERT INTO `cursos`(`cod_Curso`, `Nombre`, `Descripcion`) VALUES" + "('"
-                                  + textCodigo.Text + "','" + textNombre.Text + "','" + textDescricion.Text + "')",
-                                   textCodigo.Text.Trim(), textNombre.Text.Trim(), textDescricion.Text.Trim());
+            String sql = String.Format("INSERT INTO `cursos`(`id`, `nombre`, `descripcion`, `objetivo`, `id_instructor`) VALUES " + "('"
+                                  + textCodigo.Text + "','" + textNombre.Text + "','" + textDescricion.Text + "','" + textObjetivo.Text + "','" + textImparte.Text + "')",
+                                   textCodigo.Text.Trim(), textNombre.Text.Trim(), textDescricion.Text.Trim(), textObjetivo.Text.Trim(), textImparte.Text.Trim());
 
             try
             {
@@ -80,7 +94,7 @@ namespace Aula_Express_2._0
 
         private void Btnborrar_Click(object sender, EventArgs e)
         {
-            string sql = String.Format("DELETE FROM cursos WHERE `cursos`.`cod_Curso` = '"+ textCodigo.Text +"'", dataGridView1.SelectedRows);
+            string sql = String.Format("DELETE FROM `cursos` WHERE `cursos`.`id` = '" + textCodigo.Text +"'", dataGridView1.SelectedRows);
             if (MessageBox.Show("¿Deseas Eliminar El Curso?", "Eliminar",
                 MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {

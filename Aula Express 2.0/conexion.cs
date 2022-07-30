@@ -9,7 +9,7 @@ namespace Aula_Express_2._0
         const string HOST = "localhost";
         const string USER = "root";
         const string PASS = "''";
-        const string DB = "aulaexpressbd";
+        const string DB = "systema_cursosv";
 
         MySqlConnection MiConexion = new MySqlConnection();
 

@@ -22,7 +22,7 @@ namespace Aula_Express_2._0
         public void guardarUser()
         {
             //Correccion de sitaxis, nombre_apellidos
-            string sql = string.Format("INSERT INTO `instructores`(`nombre_apellidos`, `correo`, `contraseña`)" +
+            string sql = string.Format("INSERT INTO `login_instructor`(`id`, `usuario`, `nombre`, `contraseña`)" +
                                         "VALUES('" + textBox1.Text + "', '" + textBox2.Text + "', '" + textBox3.Text + "')",
                                           textBox1.Text, textBox2.Text, textBox3.Text);
             
