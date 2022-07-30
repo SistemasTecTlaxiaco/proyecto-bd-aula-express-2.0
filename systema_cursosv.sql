@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 30-07-2022 a las 19:18:44
+-- Tiempo de generación: 30-07-2022 a las 19:40:43
 -- Versión del servidor: 10.4.24-MariaDB
 -- Versión de PHP: 7.4.29
 
@@ -35,8 +35,7 @@ CREATE TABLE `cursos` (
   `id_login_instructor` int(11) NOT NULL,
   `hr_inicio` int(30) NOT NULL,
   `hr_fin` int(30) NOT NULL,
-  `duracion_curso` text COLLATE utf8mb4_spanish_ci NOT NULL,
-  `dias_` text COLLATE utf8mb4_spanish_ci NOT NULL
+  `duracion_curso` text COLLATE utf8mb4_spanish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish_ci;
 
 -- --------------------------------------------------------
@@ -47,7 +46,7 @@ CREATE TABLE `cursos` (
 
 CREATE TABLE `curso_estudiante` (
   `id_login_estudiante` int(11) NOT NULL,
-  `id_cursos` int(11) NOT NULL
+  `id_curso` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish_ci;
 
 -- --------------------------------------------------------
@@ -104,8 +103,8 @@ ALTER TABLE `cursos`
 --
 ALTER TABLE `curso_estudiante`
   ADD UNIQUE KEY `id_estudiante` (`id_login_estudiante`),
-  ADD UNIQUE KEY `id_cursos` (`id_cursos`),
-  ADD UNIQUE KEY `id_cursos_2` (`id_cursos`);
+  ADD UNIQUE KEY `id_cursos` (`id_curso`),
+  ADD UNIQUE KEY `id_cursos_2` (`id_curso`);
 
 --
 -- Indices de la tabla `login`
@@ -162,7 +161,7 @@ ALTER TABLE `cursos`
 --
 ALTER TABLE `curso_estudiante`
   ADD CONSTRAINT `curso_estudiante_ibfk_1` FOREIGN KEY (`id_login_estudiante`) REFERENCES `login_studen` (`id_login_estuden`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `curso_estudiante_ibfk_2` FOREIGN KEY (`id_cursos`) REFERENCES `cursos` (`id_curso`) ON DELETE CASCADE ON UPDATE CASCADE;
+  ADD CONSTRAINT `curso_estudiante_ibfk_2` FOREIGN KEY (`id_curso`) REFERENCES `cursos` (`id_curso`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
