@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 30-07-2022 a las 12:59:12
+-- Tiempo de generación: 30-07-2022 a las 19:18:44
 -- Versión del servidor: 10.4.24-MariaDB
 -- Versión de PHP: 7.4.29
 
@@ -28,11 +28,15 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `cursos` (
-  `id` int(11) NOT NULL,
-  `nombre` text COLLATE utf8mb4_spanish_ci NOT NULL,
+  `id_curso` int(11) NOT NULL,
+  `nombre_curso` text COLLATE utf8mb4_spanish_ci NOT NULL,
   `descripcion` text COLLATE utf8mb4_spanish_ci NOT NULL,
   `objetivo` text COLLATE utf8mb4_spanish_ci NOT NULL,
-  `id_instructor` int(11) NOT NULL
+  `id_login_instructor` int(11) NOT NULL,
+  `hr_inicio` int(30) NOT NULL,
+  `hr_fin` int(30) NOT NULL,
+  `duracion_curso` text COLLATE utf8mb4_spanish_ci NOT NULL,
+  `dias_` text COLLATE utf8mb4_spanish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish_ci;
 
 -- --------------------------------------------------------
@@ -42,44 +46,20 @@ CREATE TABLE `cursos` (
 --
 
 CREATE TABLE `curso_estudiante` (
-  `id` int(11) NOT NULL,
-  `id_estudiante` int(11) NOT NULL,
+  `id_login_estudiante` int(11) NOT NULL,
   `id_cursos` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish_ci;
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `estudiante`
+-- Estructura de tabla para la tabla `login`
 --
 
-CREATE TABLE `estudiante` (
-  `id` int(11) NOT NULL,
-  `id_login_estuden` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish_ci;
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `horario`
---
-
-CREATE TABLE `horario` (
-  `id` int(11) NOT NULL,
-  `id_estudiante` int(11) NOT NULL,
-  `hora_inicio` int(25) NOT NULL,
-  `hora_fin` int(25) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish_ci;
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `instructor`
---
-
-CREATE TABLE `instructor` (
-  `id` int(11) NOT NULL,
-  `id_login_instructor` int(11) NOT NULL
+CREATE TABLE `login` (
+  `id_registro` int(11) NOT NULL,
+  `correo_user` varchar(40) COLLATE utf8mb4_spanish_ci NOT NULL,
+  `contraseña _user` varchar(8) COLLATE utf8mb4_spanish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish_ci;
 
 -- --------------------------------------------------------
@@ -89,9 +69,10 @@ CREATE TABLE `instructor` (
 --
 
 CREATE TABLE `login_instructor` (
-  `id` int(11) NOT NULL,
-  `usuario` varchar(40) COLLATE utf8mb4_spanish_ci NOT NULL,
-  `contraseña` varchar(8) COLLATE utf8mb4_spanish_ci NOT NULL
+  `id_login_instructor` int(11) NOT NULL,
+  `correo_instructor` varchar(40) COLLATE utf8mb4_spanish_ci NOT NULL,
+  `nombre_instructor` text COLLATE utf8mb4_spanish_ci NOT NULL,
+  `contraseña_instructor` varchar(8) COLLATE utf8mb4_spanish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish_ci;
 
 -- --------------------------------------------------------
@@ -101,17 +82,11 @@ CREATE TABLE `login_instructor` (
 --
 
 CREATE TABLE `login_studen` (
-  `id` int(11) NOT NULL,
-  `usuario` varchar(40) COLLATE utf8mb4_spanish_ci NOT NULL,
-  `Contraseña` varchar(8) COLLATE utf8mb4_spanish_ci NOT NULL
+  `id_login_estuden` int(11) NOT NULL,
+  `correo_estudiante` varchar(40) COLLATE utf8mb4_spanish_ci NOT NULL,
+  `nombre_estudiante` text COLLATE utf8mb4_spanish_ci NOT NULL,
+  `Contraseña_estudiante` varchar(8) COLLATE utf8mb4_spanish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish_ci;
-
---
--- Volcado de datos para la tabla `login_studen`
---
-
-INSERT INTO `login_studen` (`id`, `usuario`, `Contraseña`) VALUES
-(0, 'admin', '*84AAC12');
 
 --
 -- Índices para tablas volcadas
@@ -121,49 +96,56 @@ INSERT INTO `login_studen` (`id`, `usuario`, `Contraseña`) VALUES
 -- Indices de la tabla `cursos`
 --
 ALTER TABLE `cursos`
-  ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `id_instructor` (`id_instructor`);
+  ADD PRIMARY KEY (`id_curso`),
+  ADD UNIQUE KEY `id_instructor` (`id_login_instructor`);
 
 --
 -- Indices de la tabla `curso_estudiante`
 --
 ALTER TABLE `curso_estudiante`
-  ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `id_estudiante` (`id_estudiante`),
-  ADD UNIQUE KEY `id_cursos` (`id_cursos`);
+  ADD UNIQUE KEY `id_estudiante` (`id_login_estudiante`),
+  ADD UNIQUE KEY `id_cursos` (`id_cursos`),
+  ADD UNIQUE KEY `id_cursos_2` (`id_cursos`);
 
 --
--- Indices de la tabla `estudiante`
+-- Indices de la tabla `login`
 --
-ALTER TABLE `estudiante`
-  ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `id_login_estuden` (`id_login_estuden`);
-
---
--- Indices de la tabla `horario`
---
-ALTER TABLE `horario`
-  ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `id_estudiante` (`id_estudiante`);
-
---
--- Indices de la tabla `instructor`
---
-ALTER TABLE `instructor`
-  ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `id_login_instructor` (`id_login_instructor`);
+ALTER TABLE `login`
+  ADD PRIMARY KEY (`id_registro`);
 
 --
 -- Indices de la tabla `login_instructor`
 --
 ALTER TABLE `login_instructor`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id_login_instructor`);
 
 --
 -- Indices de la tabla `login_studen`
 --
 ALTER TABLE `login_studen`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id_login_estuden`);
+
+--
+-- AUTO_INCREMENT de las tablas volcadas
+--
+
+--
+-- AUTO_INCREMENT de la tabla `login`
+--
+ALTER TABLE `login`
+  MODIFY `id_registro` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT de la tabla `login_instructor`
+--
+ALTER TABLE `login_instructor`
+  MODIFY `id_login_instructor` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT de la tabla `login_studen`
+--
+ALTER TABLE `login_studen`
+  MODIFY `id_login_estuden` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- Restricciones para tablas volcadas
@@ -173,32 +155,14 @@ ALTER TABLE `login_studen`
 -- Filtros para la tabla `cursos`
 --
 ALTER TABLE `cursos`
-  ADD CONSTRAINT `cursos_ibfk_1` FOREIGN KEY (`id_instructor`) REFERENCES `instructor` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+  ADD CONSTRAINT `cursos_ibfk_1` FOREIGN KEY (`id_login_instructor`) REFERENCES `login_instructor` (`id_login_instructor`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Filtros para la tabla `curso_estudiante`
 --
 ALTER TABLE `curso_estudiante`
-  ADD CONSTRAINT `curso_estudiante_ibfk_1` FOREIGN KEY (`id_cursos`) REFERENCES `cursos` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `curso_estudiante_ibfk_2` FOREIGN KEY (`id_estudiante`) REFERENCES `estudiante` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
-
---
--- Filtros para la tabla `estudiante`
---
-ALTER TABLE `estudiante`
-  ADD CONSTRAINT `estudiante_ibfk_1` FOREIGN KEY (`id_login_estuden`) REFERENCES `login_studen` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
-
---
--- Filtros para la tabla `horario`
---
-ALTER TABLE `horario`
-  ADD CONSTRAINT `horario_ibfk_1` FOREIGN KEY (`id_estudiante`) REFERENCES `estudiante` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
-
---
--- Filtros para la tabla `instructor`
---
-ALTER TABLE `instructor`
-  ADD CONSTRAINT `instructor_ibfk_1` FOREIGN KEY (`id_login_instructor`) REFERENCES `login_instructor` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+  ADD CONSTRAINT `curso_estudiante_ibfk_1` FOREIGN KEY (`id_login_estudiante`) REFERENCES `login_studen` (`id_login_estuden`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `curso_estudiante_ibfk_2` FOREIGN KEY (`id_cursos`) REFERENCES `cursos` (`id_curso`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
