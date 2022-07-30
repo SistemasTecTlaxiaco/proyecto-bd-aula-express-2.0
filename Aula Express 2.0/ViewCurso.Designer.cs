@@ -34,6 +34,10 @@
             this.Btnborrar = new System.Windows.Forms.Button();
             this.Btnguardar = new System.Windows.Forms.Button();
             this.groupBoxDatCurs = new System.Windows.Forms.GroupBox();
+            this.textImparte = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.textObjetivo = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.textDescricion = new System.Windows.Forms.TextBox();
             this.textNombre = new System.Windows.Forms.TextBox();
             this.textCodigo = new System.Windows.Forms.TextBox();
@@ -43,10 +47,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.BtnCerrarsecion = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textObjetivo = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textImparte = new System.Windows.Forms.TextBox();
+            this.texthrInicio = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.texthrFinal = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.textDuracionCurso = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBoxDatCurs.SuspendLayout();
             this.SuspendLayout();
@@ -54,17 +60,17 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(683, 125);
+            this.dataGridView1.Location = new System.Drawing.Point(683, 75);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(306, 246);
+            this.dataGridView1.Size = new System.Drawing.Size(306, 349);
             this.dataGridView1.TabIndex = 25;
             // 
             // Btnmostrar
             // 
             this.Btnmostrar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btnmostrar.Location = new System.Drawing.Point(531, 397);
+            this.Btnmostrar.Location = new System.Drawing.Point(545, 449);
             this.Btnmostrar.Name = "Btnmostrar";
             this.Btnmostrar.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Btnmostrar.Size = new System.Drawing.Size(79, 23);
@@ -76,7 +82,7 @@
             // Btnsalir
             // 
             this.Btnsalir.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btnsalir.Location = new System.Drawing.Point(383, 397);
+            this.Btnsalir.Location = new System.Drawing.Point(383, 449);
             this.Btnsalir.Name = "Btnsalir";
             this.Btnsalir.Size = new System.Drawing.Size(79, 23);
             this.Btnsalir.TabIndex = 23;
@@ -87,7 +93,7 @@
             // Btnborrar
             // 
             this.Btnborrar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btnborrar.Location = new System.Drawing.Point(256, 397);
+            this.Btnborrar.Location = new System.Drawing.Point(199, 449);
             this.Btnborrar.Name = "Btnborrar";
             this.Btnborrar.Size = new System.Drawing.Size(79, 23);
             this.Btnborrar.TabIndex = 22;
@@ -98,7 +104,7 @@
             // Btnguardar
             // 
             this.Btnguardar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btnguardar.Location = new System.Drawing.Point(140, 397);
+            this.Btnguardar.Location = new System.Drawing.Point(24, 449);
             this.Btnguardar.Name = "Btnguardar";
             this.Btnguardar.Size = new System.Drawing.Size(79, 23);
             this.Btnguardar.TabIndex = 21;
@@ -108,6 +114,12 @@
             // 
             // groupBoxDatCurs
             // 
+            this.groupBoxDatCurs.Controls.Add(this.textDuracionCurso);
+            this.groupBoxDatCurs.Controls.Add(this.label10);
+            this.groupBoxDatCurs.Controls.Add(this.texthrFinal);
+            this.groupBoxDatCurs.Controls.Add(this.label9);
+            this.groupBoxDatCurs.Controls.Add(this.texthrInicio);
+            this.groupBoxDatCurs.Controls.Add(this.label8);
             this.groupBoxDatCurs.Controls.Add(this.textImparte);
             this.groupBoxDatCurs.Controls.Add(this.label7);
             this.groupBoxDatCurs.Controls.Add(this.textObjetivo);
@@ -119,59 +131,103 @@
             this.groupBoxDatCurs.Controls.Add(this.label4);
             this.groupBoxDatCurs.Controls.Add(this.label3);
             this.groupBoxDatCurs.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxDatCurs.Location = new System.Drawing.Point(12, 109);
+            this.groupBoxDatCurs.Location = new System.Drawing.Point(12, 60);
             this.groupBoxDatCurs.Name = "groupBoxDatCurs";
-            this.groupBoxDatCurs.Size = new System.Drawing.Size(665, 262);
+            this.groupBoxDatCurs.Size = new System.Drawing.Size(665, 364);
             this.groupBoxDatCurs.TabIndex = 20;
             this.groupBoxDatCurs.TabStop = false;
             this.groupBoxDatCurs.Text = "Datos Del Curso";
             // 
+            // textImparte
+            // 
+            this.textImparte.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textImparte.Location = new System.Drawing.Point(465, 73);
+            this.textImparte.Multiline = true;
+            this.textImparte.Name = "textImparte";
+            this.textImparte.Size = new System.Drawing.Size(194, 39);
+            this.textImparte.TabIndex = 13;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(468, 38);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(96, 26);
+            this.label7.TabIndex = 12;
+            this.label7.Text = "Imparte";
+            // 
+            // textObjetivo
+            // 
+            this.textObjetivo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textObjetivo.Location = new System.Drawing.Point(6, 257);
+            this.textObjetivo.Multiline = true;
+            this.textObjetivo.Name = "textObjetivo";
+            this.textObjetivo.Size = new System.Drawing.Size(434, 87);
+            this.textObjetivo.TabIndex = 11;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(6, 228);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(101, 26);
+            this.label6.TabIndex = 9;
+            this.label6.Text = "Objetivo";
+            // 
             // textDescricion
             // 
+            this.textDescricion.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDescricion.Location = new System.Drawing.Point(212, 73);
             this.textDescricion.Multiline = true;
             this.textDescricion.Name = "textDescricion";
-            this.textDescricion.Size = new System.Drawing.Size(238, 75);
+            this.textDescricion.Size = new System.Drawing.Size(238, 122);
             this.textDescricion.TabIndex = 8;
             // 
             // textNombre
             // 
-            this.textNombre.Location = new System.Drawing.Point(12, 197);
+            this.textNombre.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textNombre.Location = new System.Drawing.Point(6, 162);
             this.textNombre.Name = "textNombre";
-            this.textNombre.Size = new System.Drawing.Size(194, 39);
+            this.textNombre.Size = new System.Drawing.Size(194, 33);
             this.textNombre.TabIndex = 7;
             // 
             // textCodigo
             // 
+            this.textCodigo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textCodigo.Location = new System.Drawing.Point(12, 73);
             this.textCodigo.Name = "textCodigo";
-            this.textCodigo.Size = new System.Drawing.Size(194, 39);
+            this.textCodigo.Size = new System.Drawing.Size(194, 33);
             this.textCodigo.TabIndex = 6;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(206, 38);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(173, 32);
+            this.label5.Size = new System.Drawing.Size(141, 26);
             this.label5.TabIndex = 5;
             this.label5.Text = "Descripcion";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 151);
+            this.label4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(9, 127);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(121, 32);
+            this.label4.Size = new System.Drawing.Size(98, 26);
             this.label4.TabIndex = 4;
             this.label4.Text = "Nombre";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(6, 38);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(108, 32);
+            this.label3.Size = new System.Drawing.Size(88, 26);
             this.label3.TabIndex = 3;
             this.label3.Text = "Codigo";
             // 
@@ -207,45 +263,68 @@
             this.BtnCerrarsecion.UseVisualStyleBackColor = true;
             this.BtnCerrarsecion.Click += new System.EventHandler(this.BtnCerrarsecion_Click);
             // 
-            // label6
+            // texthrInicio
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(206, 151);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(124, 32);
-            this.label6.TabIndex = 9;
-            this.label6.Text = "Objetivo";
+            this.texthrInicio.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.texthrInicio.Location = new System.Drawing.Point(465, 151);
+            this.texthrInicio.Multiline = true;
+            this.texthrInicio.Name = "texthrInicio";
+            this.texthrInicio.Size = new System.Drawing.Size(194, 39);
+            this.texthrInicio.TabIndex = 15;
             // 
-            // textObjetivo
+            // label8
             // 
-            this.textObjetivo.Location = new System.Drawing.Point(212, 197);
-            this.textObjetivo.Multiline = true;
-            this.textObjetivo.Name = "textObjetivo";
-            this.textObjetivo.Size = new System.Drawing.Size(434, 39);
-            this.textObjetivo.TabIndex = 11;
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(468, 116);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(161, 26);
+            this.label8.TabIndex = 14;
+            this.label8.Text = "Hora de inicio";
             // 
-            // label7
+            // texthrFinal
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(468, 38);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(118, 32);
-            this.label7.TabIndex = 12;
-            this.label7.Text = "Imparte";
+            this.texthrFinal.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.texthrFinal.Location = new System.Drawing.Point(465, 228);
+            this.texthrFinal.Multiline = true;
+            this.texthrFinal.Name = "texthrFinal";
+            this.texthrFinal.Size = new System.Drawing.Size(194, 39);
+            this.texthrFinal.TabIndex = 17;
             // 
-            // textImparte
+            // label9
             // 
-            this.textImparte.Location = new System.Drawing.Point(465, 73);
-            this.textImparte.Multiline = true;
-            this.textImparte.Name = "textImparte";
-            this.textImparte.Size = new System.Drawing.Size(194, 39);
-            this.textImparte.TabIndex = 13;
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(468, 193);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(116, 26);
+            this.label9.TabIndex = 16;
+            this.label9.Text = "Hora final";
+            // 
+            // textDuracionCurso
+            // 
+            this.textDuracionCurso.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textDuracionCurso.Location = new System.Drawing.Point(467, 305);
+            this.textDuracionCurso.Multiline = true;
+            this.textDuracionCurso.Name = "textDuracionCurso";
+            this.textDuracionCurso.Size = new System.Drawing.Size(194, 39);
+            this.textDuracionCurso.TabIndex = 19;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(470, 270);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(109, 26);
+            this.label10.TabIndex = 18;
+            this.label10.Text = "Duracion";
             // 
             // Form6
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1001, 450);
+            this.ClientSize = new System.Drawing.Size(1001, 484);
             this.Controls.Add(this.BtnCerrarsecion);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.Btnmostrar);
@@ -287,5 +366,11 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox textObjetivo;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox textDuracionCurso;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox texthrFinal;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox texthrInicio;
+        private System.Windows.Forms.Label label8;
     }
 }

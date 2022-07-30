@@ -24,7 +24,9 @@ namespace Aula_Express_2._0
 
         private void btnAcceder_Click(object sender, EventArgs e)
         {
-
+            Form curso1 = new Form6();
+            curso1.Show();
+            this.Hide();
         }
     }
 }

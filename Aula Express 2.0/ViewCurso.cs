@@ -13,7 +13,7 @@ namespace Aula_Express_2._0
         {
             InitializeComponent();
         }
-
+         
         public void limpiar()
         {
             textCodigo.Text = " ";
@@ -21,6 +21,10 @@ namespace Aula_Express_2._0
             textDescricion.Text = " ";
             textObjetivo.Text = " ";
             textImparte.Text = " ";
+            texthrInicio.Text = " ";
+            texthrFinal.Text = " ";
+            textDuracionCurso.Text = " ";
+
             dataGridView1.ClearSelection();
         }
 
@@ -35,7 +39,10 @@ namespace Aula_Express_2._0
                textNombre.Text.Trim() == String.Empty &&
                textDescricion.Text.Trim() == String.Empty &&
                textObjetivo.Text.Trim()== String.Empty &&
-               textImparte.Text.Trim() == String.Empty)
+               textImparte.Text.Trim() == String.Empty &&
+               texthrInicio.Text.Trim() == String.Empty &&
+               texthrFinal.Text.Trim() == String.Empty &&
+               textDuracionCurso.Text.Trim() == String.Empty)
             {
                 MessageBox.Show("!!!... Error, los campos no pueden estar vacios ...!!!");
                 return;
@@ -68,10 +75,25 @@ namespace Aula_Express_2._0
                 MessageBox.Show("Debes ingresar quien imparte el curso");
                 return;
             }
+            if (texthrInicio.Text.Trim() == String.Empty)
+            {
+                MessageBox.Show("Debes ingresar hora de inicio");
+                return;
+            }
+            if (texthrFinal.Text.Trim() == String.Empty)
+            {
+                MessageBox.Show("Debes ingresar hora en que termina el curso");
+                return;
+            }
+            if (textDescricion.Text.Trim() == String.Empty)
+            {
+                MessageBox.Show("Debes ingresar una descripcion del curso");
+                return;
+            }
 
-            String sql = String.Format("INSERT INTO `cursos`(`id`, `nombre`, `descripcion`, `objetivo`, `id_instructor`) VALUES " + "('"
-                                  + textCodigo.Text + "','" + textNombre.Text + "','" + textDescricion.Text + "','" + textObjetivo.Text + "','" + textImparte.Text + "')",
-                                   textCodigo.Text.Trim(), textNombre.Text.Trim(), textDescricion.Text.Trim(), textObjetivo.Text.Trim(), textImparte.Text.Trim());
+            String sql = String.Format("INSERT INTO `cursos`(`id_curso`, `nombre_curso`, `descripcion`, `objetivo`, `id_login_instructor`, `hr_inicio`, `hr_fin`, `duracion_curso`) VALUES" + "('"
+                                  + textCodigo.Text + "','" + textNombre.Text + "','" + textDescricion.Text + "','" + textObjetivo.Text + "','" + textImparte.Text + "','" +  texthrInicio.Text + "','"+ texthrFinal.Text + "','"+ textDuracionCurso.Text + "')",
+                                   textCodigo.Text.Trim(), textNombre.Text.Trim(), textDescricion.Text.Trim(), textObjetivo.Text.Trim(), textImparte.Text.Trim(), texthrInicio.Text.Trim(), texthrFinal.Text.Trim(), textDuracionCurso.Text.Trim());
 
             try
             {
