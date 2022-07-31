@@ -34,6 +34,12 @@
             this.Btnborrar = new System.Windows.Forms.Button();
             this.Btnguardar = new System.Windows.Forms.Button();
             this.groupBoxDatCurs = new System.Windows.Forms.GroupBox();
+            this.textDuracionCurso = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.texthrFinal = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.texthrInicio = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.textImparte = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.textObjetivo = new System.Windows.Forms.TextBox();
@@ -47,12 +53,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.BtnCerrarsecion = new System.Windows.Forms.Button();
-            this.texthrInicio = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.texthrFinal = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.textDuracionCurso = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBoxDatCurs.SuspendLayout();
             this.SuspendLayout();
@@ -64,7 +64,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(306, 349);
+            this.dataGridView1.Size = new System.Drawing.Size(337, 349);
             this.dataGridView1.TabIndex = 25;
             // 
             // Btnmostrar
@@ -137,6 +137,63 @@
             this.groupBoxDatCurs.TabIndex = 20;
             this.groupBoxDatCurs.TabStop = false;
             this.groupBoxDatCurs.Text = "Datos Del Curso";
+            // 
+            // textDuracionCurso
+            // 
+            this.textDuracionCurso.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textDuracionCurso.Location = new System.Drawing.Point(467, 305);
+            this.textDuracionCurso.Multiline = true;
+            this.textDuracionCurso.Name = "textDuracionCurso";
+            this.textDuracionCurso.Size = new System.Drawing.Size(194, 39);
+            this.textDuracionCurso.TabIndex = 19;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(470, 270);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(109, 26);
+            this.label10.TabIndex = 18;
+            this.label10.Text = "Duracion";
+            // 
+            // texthrFinal
+            // 
+            this.texthrFinal.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.texthrFinal.Location = new System.Drawing.Point(465, 228);
+            this.texthrFinal.Multiline = true;
+            this.texthrFinal.Name = "texthrFinal";
+            this.texthrFinal.Size = new System.Drawing.Size(194, 39);
+            this.texthrFinal.TabIndex = 17;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(468, 193);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(116, 26);
+            this.label9.TabIndex = 16;
+            this.label9.Text = "Hora final";
+            // 
+            // texthrInicio
+            // 
+            this.texthrInicio.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.texthrInicio.Location = new System.Drawing.Point(465, 151);
+            this.texthrInicio.Multiline = true;
+            this.texthrInicio.Name = "texthrInicio";
+            this.texthrInicio.Size = new System.Drawing.Size(194, 39);
+            this.texthrInicio.TabIndex = 15;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(468, 116);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(161, 26);
+            this.label8.TabIndex = 14;
+            this.label8.Text = "Hora de inicio";
             // 
             // textImparte
             // 
@@ -254,7 +311,7 @@
             // BtnCerrarsecion
             // 
             this.BtnCerrarsecion.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnCerrarsecion.Location = new System.Drawing.Point(856, 9);
+            this.BtnCerrarsecion.Location = new System.Drawing.Point(877, 12);
             this.BtnCerrarsecion.Name = "BtnCerrarsecion";
             this.BtnCerrarsecion.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.BtnCerrarsecion.Size = new System.Drawing.Size(133, 23);
@@ -263,68 +320,11 @@
             this.BtnCerrarsecion.UseVisualStyleBackColor = true;
             this.BtnCerrarsecion.Click += new System.EventHandler(this.BtnCerrarsecion_Click);
             // 
-            // texthrInicio
-            // 
-            this.texthrInicio.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.texthrInicio.Location = new System.Drawing.Point(465, 151);
-            this.texthrInicio.Multiline = true;
-            this.texthrInicio.Name = "texthrInicio";
-            this.texthrInicio.Size = new System.Drawing.Size(194, 39);
-            this.texthrInicio.TabIndex = 15;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(468, 116);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(161, 26);
-            this.label8.TabIndex = 14;
-            this.label8.Text = "Hora de inicio";
-            // 
-            // texthrFinal
-            // 
-            this.texthrFinal.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.texthrFinal.Location = new System.Drawing.Point(465, 228);
-            this.texthrFinal.Multiline = true;
-            this.texthrFinal.Name = "texthrFinal";
-            this.texthrFinal.Size = new System.Drawing.Size(194, 39);
-            this.texthrFinal.TabIndex = 17;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(468, 193);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(116, 26);
-            this.label9.TabIndex = 16;
-            this.label9.Text = "Hora final";
-            // 
-            // textDuracionCurso
-            // 
-            this.textDuracionCurso.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textDuracionCurso.Location = new System.Drawing.Point(467, 305);
-            this.textDuracionCurso.Multiline = true;
-            this.textDuracionCurso.Name = "textDuracionCurso";
-            this.textDuracionCurso.Size = new System.Drawing.Size(194, 39);
-            this.textDuracionCurso.TabIndex = 19;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(470, 270);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(109, 26);
-            this.label10.TabIndex = 18;
-            this.label10.Text = "Duracion";
-            // 
             // Form6
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1001, 484);
+            this.ClientSize = new System.Drawing.Size(1032, 484);
             this.Controls.Add(this.BtnCerrarsecion);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.Btnmostrar);
