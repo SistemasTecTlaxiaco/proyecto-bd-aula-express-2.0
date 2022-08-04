@@ -21,10 +21,10 @@ namespace Aula_Express_2._0
 
         public void guardarUser()
         {
-            string sql = string.Format("INSERT INTO `estudiantes`(`nombreEstudiante`, `correo`, `contraseña`)" +
-                " VALUES('"+ textBox1.Text +"', '"+ textBox2.Text +"', '"+textBox3.Text +"')",
-                textBox1.Text, textBox2.Text, textBox3.Text);
-            
+            string sql = string.Format("INSERT INTO `login_studen`(`correo_estudiante`, `nombre_estudiante`, `Contraseña_estudiante`)" +
+                 " VALUES('" + textBox2.Text + "', '" + textBox1.Text + "', '" + textBox3.Text + "')",
+                 textBox2.Text, textBox1.Text, textBox3.Text);
+
             try
             {
 
