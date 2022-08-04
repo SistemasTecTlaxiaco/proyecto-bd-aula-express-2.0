@@ -30,7 +30,7 @@ namespace Aula_Express_2._0
 
         public int Query(string sql)
         {
-            MySqlCommand command = new MySqlCommand(sql, MiConexion);
+            MySqlCommand command = new MySqlCommand(sql, MiConexion); 
             return command.ExecuteNonQuery();
         }
 

@@ -75,7 +75,7 @@ namespace Aula_Express_2._0
                 MessageBox.Show("Debes ingresar quien imparte el curso");
                 return;
             }
-     
+      
             if (texthrInicio.Text.Trim() == String.Empty)
             {
                 MessageBox.Show("Debes ingresar hora de inicio");
